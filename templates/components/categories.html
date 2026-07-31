@@ -1,0 +1,33 @@
+<section class="container py-5">
+
+<h2 class="text-center mb-5">
+Shop by Category
+</h2>
+
+<div class="row">
+
+{% for category in categories %}
+
+<div class="col-md-3 mb-4">
+
+<div class="card shadow border-0">
+
+<img src="{{ category.image.url }}"
+class="card-img-top"
+style="height:200px;object-fit:cover;">
+
+<div class="card-body text-center">
+
+<h5>{{ category.name }}</h5>
+
+</div>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>

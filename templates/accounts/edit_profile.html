@@ -1,0 +1,68 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+Edit Profile
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow-lg p-4">
+
+<h2 class="text-center mb-4">
+
+Edit Profile
+
+</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+{% csrf_token %}
+
+<div class="mb-3">
+
+<label>Name</label>
+
+{{ user_form.first_name }}
+
+</div>
+
+<div class="mb-3">
+
+<label>Email</label>
+
+{{ user_form.email }}
+
+</div>
+
+<div class="mb-3">
+
+<label>Profile Image</label>
+
+{{ profile_form.profile_image }}
+
+</div>
+
+<button
+class="btn btn-success w-100">
+
+Save Changes
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

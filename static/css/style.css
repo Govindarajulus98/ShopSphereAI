@@ -1,0 +1,84 @@
+body{
+    background:#f5f7fa;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Product Card */
+
+.product-card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    background:white;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.product-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.price{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.brand{
+    color:gray;
+}
+
+.badge-sale{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:red;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:none;
+    background:#f1f5f9;
+    transition:.3s;
+}
+
+.icon-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.search-box{
+    border-radius:50px;
+    padding:14px;
+}
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.btn{
+    border-radius:10px;
+}
+
+img{
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
